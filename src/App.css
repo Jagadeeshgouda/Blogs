@@ -1,0 +1,28 @@
+.blogPostListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blogPostCard {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 16px;
+  border-radius: 8px;
+  width: calc(25% - 32px); /* Adjust the width based on your design */
+  box-sizing: border-box;
+  max-width: 300px; /* Add a maximum width if needed */
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .blogPostCard {
+    width: calc(50% - 32px); /* Adjust the width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .blogPostCard {
+    width: calc(100% - 32px); /* Adjust the width for even smaller screens */
+  }
+}
